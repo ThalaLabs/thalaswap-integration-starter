@@ -1,1 +1,3 @@
 build/
+.aptos/
+!ThalaSwap/build/

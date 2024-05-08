@@ -4,9 +4,19 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-depends_on_thalaswap = "0xCAFE"
+depends_on_thalaswap = "0x048b23ee6c539c0f41ae009cacb490b4af71de9054ef0b195e0c446cc88c9344"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-core.git"
 rev = "mainnet"
 subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.FixedPoint64]
+git = "https://github.com/ThalaLabs/fixed_point64"
+rev = "main"
+
+[dependencies.ThalaSwap]
+local = "./ThalaSwap"
+
+[dependencies.bridge]
+local = "./Layerzero"
